@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Bmw bmw = new Bmw();
-        Audi audi = new Audi();
-        Mercedes mercedes = new Mercedes();
+        Bmw bmw = new Bmw(345, "M5");
+        Audi audi = new Audi(450, "RS4");
+        Mercedes mercedes = new Mercedes(221, "GLA 220");
 
 
         Scanner s = new Scanner(System.in);
@@ -17,7 +17,7 @@ public class Main {
             audi.arrancar();
             mercedes.arrancar();
         } else {
-            System.out.println("coche kaput");
+            System.out.println("Coche kaputt");
         }
 
     }

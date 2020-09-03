@@ -1,4 +1,6 @@
 public class Bmw extends Coche {
+
+
     @Override
     public void arrancar() {
         System.out.println("brrrrrmmm");
@@ -8,4 +10,13 @@ public class Bmw extends Coche {
     public void conducir() {
         System.out.println("para adelante");
     }
+
+    @Override
+    public void parar() {
+        System.out.println("Coche apagado");
+    }
+    public Bmw(int cv, String modelo){
+        super(cv, modelo);
+    }
+
 }
