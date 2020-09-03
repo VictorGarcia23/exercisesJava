@@ -13,7 +13,7 @@ public class Mercedes extends Coche{
     public void parar() {
         System.out.println("Coche apagado");
     }
-    public Mercedes(int cv, String modelo){
-        super(cv, modelo);
+    public Mercedes(int cv, String modelo, String color){
+        super(cv, modelo, color);
     }
 }

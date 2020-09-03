@@ -15,8 +15,8 @@ public class Bmw extends Coche {
     public void parar() {
         System.out.println("Coche apagado");
     }
-    public Bmw(int cv, String modelo){
-        super(cv, modelo);
+    public Bmw(int cv, String modelo, String color){
+        super(cv, modelo, color);
     }
 
 }
