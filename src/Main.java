@@ -1,3 +1,6 @@
+import javax.sound.midi.Soundbank;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Bmw bmw = new Bmw();
@@ -5,14 +8,18 @@ public class Main {
         Mercedes mercedes = new Mercedes();
 
 
-        bmw.arrancar();
-        bmw.conducir();
+        Scanner s = new Scanner(System.in);
+        System.out.println("Tiene la llave?");
+        String llaves = s.nextLine();
 
-        audi.arrancar();
-        audi.conducir();
+        if (llaves.equals("si")) {
+            bmw.arrancar();
+            audi.arrancar();
+            mercedes.arrancar();
+        } else {
+            System.out.println("coche kaput");
+        }
 
-        mercedes.arrancar();
-        mercedes.conducir();
     }
 
 }
